@@ -18,8 +18,11 @@ function App() {
 return (
 <>
 <div className="app_wrapper" onClick={closeIntro}>
+  
+<div className='header_cont'></div>
+  
 <div className='app_cont'>
-
+    
     {
     runIntro
     ?

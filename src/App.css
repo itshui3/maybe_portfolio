@@ -23,4 +23,6 @@
 .app_cont .Typewriter {
     font-size: 1.5rem;
     color: white;
+
+    cursor: crosshair;
 }

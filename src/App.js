@@ -17,7 +17,7 @@ function App() {
 
 return (
 <>
-<div className="app_wrapper">
+<div className="app_wrapper" onClick={closeIntro}>
 <div className='app_cont'>
 
     {

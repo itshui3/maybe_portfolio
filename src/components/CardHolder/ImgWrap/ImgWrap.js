@@ -14,48 +14,54 @@ import sciCalcGif from './gifs/2.3.21_sciCalc.gif'
 import snekGif from './gifs/2.3.21_snek.gif'
 
 
-const assets = [
+// const assets = [
 
-    {
-        img: gameOfLife,
-        gif: gameOfLifeGif
-    },
+//     {
+//         img: gameOfLife,
+//         gif: gameOfLifeGif
+//     },
 
-    {
-        img: gameOfObject,
-        gif: gameOfObjectGif
-    },
+//     {
+//         img: gameOfObject,
+//         gif: gameOfObjectGif
+//     },
 
-    {
-        img: mightyList,
-        gif: mightyListGif
-    },
+//     {
+//         img: mightyList,
+//         gif: mightyListGif
+//     },
 
-    {
-        img: sciCalc,
-        gif: sciCalcGif
-    },
+//     {
+//         img: sciCalc,
+//         gif: sciCalcGif
+//     },
 
-    {
-        img: snek,
-        gif: snekGif
-    },
+//     {
+//         img: snek,
+//         gif: snekGif
+//     },
 
-]
+// ]
 
-function ImgWrap({ gif, current, HOVER, UNHOVER }) {
+function ImgWrap({ 
+    gif, 
+    current, 
+    handleHover,
+    handleUnhover
+}) {
     // gif: boolean: do we display gif or png
     // current: Number: which projImg are we on
     // gif ? assets[current].gif : assets[current].img
+
 return (
 <>
 
 <img 
 className='card_img' 
-src={gif ? assets[current].gif : assets[current].img} 
+src={gameOfLifeGif} 
 
-onMouseEnter={() => dispatchDisplay({ type: HOVER })} 
-onMouseLeave={() => dispatchDisplay({ type: UNHOVER })} />
+onMouseEnter={handleHover} 
+onMouseLeave={handleUnhover} />
     
 </>
 )

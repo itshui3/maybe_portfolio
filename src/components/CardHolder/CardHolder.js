@@ -16,12 +16,13 @@ function CardHolder() {
 
     const [display, dispatchDisplay] = useReducer(imgReducer, initImg)
 
-    useEffect(() => {
-        console.log('GoLGif', GoLGif)
-        console.log('display gif', display.assets[display.current].gif)
+    const handleHover = () => {
+        dispatchDisplay({ type: IMG_ACTION.HOVER })
+    }
 
-
-    }, [])
+    const handleUnhover = () => {
+        dispatchDisplay({ type: IMG_ACTION.UNHOVER })
+    }
 
 return (
 <>
@@ -33,17 +34,11 @@ return (
         <div className='card_body'>
             <div className='card_imgBody'>
 
-            {/* <img 
-            className='card_img' 
-            src={display.gif ? display.assets[display.current].gif : display.assets[display.current].img} 
-            
-            onMouseEnter={() => dispatchDisplay({ type: IMG_ACTION.HOVER })} 
-            onMouseLeave={() => dispatchDisplay({ type: IMG_ACTION.UNHOVER })} /> */}
             <ImgWrap 
             gif={display.gif}
             current={display.current}
-            HOVER={IMG_ACTION.HOVER}
-            UNHOVER={IMG_ACTION.UNHOVER}
+            handleHover={handleHover}
+            handleUnhover={handleUnhover}
             />
             
             </div>
@@ -51,7 +46,7 @@ return (
         <div className='card_footer'>
             <div className='buttons_cont'>
             {
-            display.assets.map((item, idx) => (
+            [0, 1, 2, 3, 4].map((item, idx) => (
                 <div className='buttons_btn' key={idx}></div>
             ))
             }

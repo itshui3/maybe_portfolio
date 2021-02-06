@@ -21,13 +21,13 @@ return (
             <Arrow rotateProp={{}} />
         </div>
         <div className='card_body'>
-            <img src={imgAssets[0].img} alt='a test img' />
+            <img src='gameOfLife.PNG' alt='a test img' />
         </div>
         <div className='card_footer'>
             <div className='buttons_cont'>
             {
             imgAssets.map((item, idx) => (
-                <div className='buttons_btn'></div>
+                <div className='buttons_btn' key={idx}></div>
             ))
             }
             </div>

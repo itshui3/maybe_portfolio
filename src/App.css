@@ -10,7 +10,7 @@
 
     /* and I might only need this height because 
     cont body child doesn't have designated sizing */
-    height: 90vh;
+    height: 650px;
 
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 
 import { Arrow } from '../../components'
 
-import { imgAssets } from './imgAssets'
+import { imgAssets } from './imgAssets.js'
 
 function CardHolder() {
 
@@ -21,7 +21,7 @@ return (
             <Arrow rotateProp={{}} />
         </div>
         <div className='card_body'>
-            <img src='gameOfLife.PNG' alt='a test img' />
+            <img src={imgAssets[0].img} alt='a test img' />
         </div>
         <div className='card_footer'>
             <div className='buttons_cont'>

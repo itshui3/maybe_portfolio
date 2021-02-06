@@ -4,14 +4,7 @@ import React, { useEffect } from 'react'
 
 import { Arrow } from '../../components'
 
-const items = [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-]
+import { imgAssets } from './imgAssets'
 
 function CardHolder() {
 
@@ -26,11 +19,13 @@ return (
         <div className='card_header'>
             <Arrow rotateProp={{}} />
         </div>
-        <div className='card_body'></div>
+        <div className='card_body'>
+            <img src={imgAssets[0].img} alt='a test img' />
+        </div>
         <div className='card_footer'>
             <div className='buttons_cont'>
             {
-            items.map((item, idx) => (
+            imgAssets.map((item, idx) => (
                 <div className='buttons_btn'></div>
             ))
             }

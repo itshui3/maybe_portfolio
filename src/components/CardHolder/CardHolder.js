@@ -10,6 +10,7 @@ function CardHolder() {
 
     useEffect(() => {
         console.log('init cardholder')
+        console.log(imgAssets[0].img)
     }, [])
 
 return (

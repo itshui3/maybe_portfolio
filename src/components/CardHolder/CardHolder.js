@@ -3,9 +3,9 @@ import './CardHolder.css'
 import React, { useEffect, useReducer } from 'react'
 
 import { Arrow } from '../../components'
+import ImgWrap from './ImgWrap/ImgWrap.js'
 
 import {
-    imgAssets,
 
     initImg,
     IMG_ACTION,
@@ -14,11 +14,13 @@ import {
 
 function CardHolder() {
 
-    const [img, dispatchImg] = useReducer(imgReducer, initImg)
+    const [display, dispatchDisplay] = useReducer(imgReducer, initImg)
 
     useEffect(() => {
-        console.log('init cardholder')
-        console.log(img.imgs[img.current])
+        console.log('GoLGif', GoLGif)
+        console.log('display gif', display.assets[display.current].gif)
+
+
     }, [])
 
 return (
@@ -30,14 +32,26 @@ return (
         </div>
         <div className='card_body'>
             <div className='card_imgBody'>
-            <img className='card_img'
-            src={ img.imgs[img.current].img } alt='a test img' />
+
+            {/* <img 
+            className='card_img' 
+            src={display.gif ? display.assets[display.current].gif : display.assets[display.current].img} 
+            
+            onMouseEnter={() => dispatchDisplay({ type: IMG_ACTION.HOVER })} 
+            onMouseLeave={() => dispatchDisplay({ type: IMG_ACTION.UNHOVER })} /> */}
+            <ImgWrap 
+            gif={display.gif}
+            current={display.current}
+            HOVER={IMG_ACTION.HOVER}
+            UNHOVER={IMG_ACTION.UNHOVER}
+            />
+            
             </div>
         </div>
         <div className='card_footer'>
             <div className='buttons_cont'>
             {
-            imgAssets.map((item, idx) => (
+            display.assets.map((item, idx) => (
                 <div className='buttons_btn' key={idx}></div>
             ))
             }

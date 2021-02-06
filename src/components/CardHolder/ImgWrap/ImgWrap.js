@@ -7,41 +7,39 @@ import mightyList from './images/mightyList.PNG'
 import sciCalc from './images/sciCalc.PNG'
 import snek from './images/snek.PNG'
 
-// import gameOfLifeGif from './images/2.3.21_gameOfLife.gif'
-// import gameOfObjectGif from './images/2.3.21_gameOfObject.gif'
-// import mightyListGif from './images/2.3.21_mightyList1.gif'
-// import sciCalcGif from './images/2.3.21_sciCalc.gif'
-// import snekGif from './images/2.3.21_snek.gif'
+import gameOfLifeGif from './images/2.3.21_gameOfLife.gif'
+import gameOfObjectGif from './images/2.3.21_gameofObject.gif'
+import mightyListGif from './images/2.3.21_mightyList1.gif'
+import sciCalcGif from './images/2.3.21_sciCalc.gif'
+import snekGif from './images/2.3.21_snek.gif'
 
 
-// const assets = [
+const assets = [
+    {
+        img: gameOfLife,
+        gif: gameOfLifeGif
+    },
 
-//     {
-//         img: gameOfLife,
-//         gif: gameOfLifeGif
-//     },
+    {
+        img: gameOfObject,
+        gif: gameOfObjectGif
+    },
 
-//     {
-//         img: gameOfObject,
-//         gif: gameOfObjectGif
-//     },
+    {
+        img: mightyList,
+        gif: mightyListGif
+    },
 
-//     {
-//         img: mightyList,
-//         gif: mightyListGif
-//     },
+    {
+        img: sciCalc,
+        gif: sciCalcGif
+    },
 
-//     {
-//         img: sciCalc,
-//         gif: sciCalcGif
-//     },
-
-//     {
-//         img: snek,
-//         gif: snekGif
-//     },
-
-// ]
+    {
+        img: snek,
+        gif: snekGif
+    },
+]
 
 function ImgWrap({ 
     gif, 
@@ -58,7 +56,7 @@ return (
 
 <img 
 className='card_img' 
-src={snek} 
+src={gif ? assets[current].gif : assets[current].img} 
 
 onMouseEnter={handleHover} 
 onMouseLeave={handleUnhover} />

@@ -7,11 +7,11 @@ import mightyList from './images/mightyList.PNG'
 import sciCalc from './images/sciCalc.PNG'
 import snek from './images/snek.PNG'
 
-import gameOfLifeGif from './gifs/2.3.21_gameOfLife.gif'
-import gameOfObjectGif from './gifs/2.3.21_gameOfObject.gif'
-import mightyListGif from './gifs/2.3.21_mightyList1.gif'
-import sciCalcGif from './gifs/2.3.21_sciCalc.gif'
-import snekGif from './gifs/2.3.21_snek.gif'
+// import gameOfLifeGif from './images/2.3.21_gameOfLife.gif'
+// import gameOfObjectGif from './images/2.3.21_gameOfObject.gif'
+// import mightyListGif from './images/2.3.21_mightyList1.gif'
+// import sciCalcGif from './images/2.3.21_sciCalc.gif'
+// import snekGif from './images/2.3.21_snek.gif'
 
 
 // const assets = [
@@ -58,7 +58,7 @@ return (
 
 <img 
 className='card_img' 
-src={gameOfLifeGif} 
+src={snek} 
 
 onMouseEnter={handleHover} 
 onMouseLeave={handleUnhover} />

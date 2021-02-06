@@ -56,6 +56,7 @@ return (
                 <div className='buttons_btn' key={idx}
                 style={activeBtnUI(display.current, idx)}
                 // if current === idx, style should depict clear transform
+                onClick={() => dispatchDisplay({ type: IMG_ACTION.SELECT, payload: idx })}
                 ></div>
             ))
             }
@@ -63,11 +64,11 @@ return (
             <div className='arrows_cont'>
                 <Arrow 
                 rotateProp={{ transform: 'rotate(-90deg)' }} 
-                dir={'left'}
+                dir={() => dispatchDisplay({ type: IMG_ACTION.LEFT })}
                 />
                 <Arrow 
                 rotateProp={{ transform: 'rotate(90deg)' }}
-                dir={'right'}
+                dir={() => dispatchDisplay({ type: IMG_ACTION.RIGHT })}
                 />
             </div>
         </div>

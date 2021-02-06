@@ -28,7 +28,9 @@ return (
     onMouseDown={() => setEmphasis(1)}
     onMouseUp={() => setEmphasis(-1)}
     onMouseEnter={() => setEmphasis(-1)}
-    onMouseLeave={() => setEmphasis(0)}>
+    onMouseLeave={() => setEmphasis(0)}
+    
+    onClick={dir}>
         <line x1='0%' y1="75%" x2="50%" y2="0%" 
         stroke={sColorWhite(emphasis)} strokeWidth={sWidth(emphasis ? 3.1 : 3)}
         />

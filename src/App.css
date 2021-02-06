@@ -1,6 +1,6 @@
 
 .app_wrapper {
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -10,7 +10,7 @@
 
     /* and I might only need this height because 
     cont body child doesn't have designated sizing */
-    height: 85vh;
+    height: 90vh;
 
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .header_cont {
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .app_cont .Typewriter {

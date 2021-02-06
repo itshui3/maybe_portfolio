@@ -28,9 +28,9 @@ return (
 <>
 
     <div className='card_cont'>
-        <div className='card_header'>
+        {/* <div className='card_header'>
             <Arrow rotateProp={{ transform: 'rotate(-90deg)' }} />
-        </div>
+        </div> */}
         <div className='card_body'>
             <div className='card_imgBody'>
 
@@ -47,11 +47,20 @@ return (
             <div className='buttons_cont'>
             {
             [0, 1, 2, 3, 4].map((item, idx) => (
-                <div className='buttons_btn' key={idx}></div>
+                <div className='buttons_btn' key={idx}
+                
+                ></div>
             ))
             }
             </div>
-            <Arrow rotateProp={{ transform: 'rotate(90deg)' }}/>
+            <div className='arrows_cont'>
+                <Arrow 
+                rotateProp={{ transform: 'rotate(-90deg)' }} 
+                />
+                <Arrow 
+                rotateProp={{ transform: 'rotate(90deg)' }}
+                />
+            </div>
         </div>
     </div>
 

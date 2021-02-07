@@ -1,10 +1,13 @@
+.footer_cont {
+    position: fixed;
+    bottom: 0;
+    user-select: none;
+}
 
 .links_cont {
-    position: absolute;
-    top: 5%;
-    right: 5%;
 
     display: flex;
+    justify-content: center;
 }
 
 .links_items {

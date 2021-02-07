@@ -5,7 +5,8 @@ import './App.css';
 import {
   Intro,
   CardHolder,
-  Links
+  Footer,
+  Header,
 } from './components';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 return (
 <>
 <div className="app_wrapper" onClick={closeIntro}>
-<Links />
+<Header />
 <div className='app_cont'>
     
     {
@@ -34,6 +35,7 @@ return (
     }
 
 </div>
+<Footer />
 </div>
 </>
 );

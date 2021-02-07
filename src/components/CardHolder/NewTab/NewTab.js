@@ -11,7 +11,15 @@ import {
 const { ACTION } = OFFSET;
 const { HOVER, UNHOVER, INCR, ASSIGN_INT, CLEAR_INT, RESET } = ACTION;
 
-function NewTab() {
+const ntAssets = [
+    "https://game-of-life-b7812.web.app/",
+    "https://game-of-object-object.firebaseapp.com/",
+    "https://the-mighty-list-of-stuffs.itshui3.vercel.app/",
+    "https://scientific-calculator-three.vercel.app/",
+    "https://snek-game.vercel.app/snek"
+]
+
+function NewTab({ idx }) {
 
     // const [offset, setOffset] = useState(5)
     const [offset, dispatchOffset] = useReducer(offsetReducer, initOffset);
@@ -34,7 +42,7 @@ function NewTab() {
 
 return (
 <>
-
+<a href={ ntAssets[idx] } target="_blank">
     <svg className='svg_newTab'
     onMouseOver={() => dispatchOffset({ type: HOVER })}
     onMouseLeave={() => dispatchOffset({ type: UNHOVER })}>
@@ -79,7 +87,7 @@ return (
         {/* offset neesd to be between 5-45 */}
 
     </svg>
-
+</a>
 </>
 );
 };

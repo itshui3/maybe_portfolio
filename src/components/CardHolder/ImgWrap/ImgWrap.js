@@ -17,27 +17,32 @@ import snekGif from './images/2.3.21_snek.gif';
 const assets = [
     {
         img: gameOfLife,
-        gif: gameOfLifeGif
+        gif: gameOfLifeGif,
+
     },
 
     {
         img: gameOfObject,
-        gif: gameOfObjectGif
+        gif: gameOfObjectGif,
+
     },
 
     {
         img: mightyList,
-        gif: mightyListGif
+        gif: mightyListGif,
+
     },
 
     {
         img: sciCalc,
-        gif: sciCalcGif
+        gif: sciCalcGif,
+
     },
 
     {
         img: snek,
-        gif: snekGif
+        gif: snekGif,
+
     },
 ];
 

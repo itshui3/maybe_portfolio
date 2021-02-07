@@ -41,8 +41,8 @@ return (
             <div className='card_imgBody'>
 
             <div className='github_newtab svgs'>
-                <GitHub />
-                <NewTab />
+                <GitHub idx={display.current} />
+                <NewTab idx={display.current} />
             </div>
 
             <InfoCircle />

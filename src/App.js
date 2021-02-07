@@ -5,6 +5,7 @@ import './App.css';
 import {
   Intro,
   CardHolder,
+  Links
 } from './components';
 
 function App() {
@@ -15,14 +16,13 @@ function App() {
     }, [runIntro]);
 
     const closeIntro = () => {
-        console.log('hai gaiz owo?');
         setRunIntro(false);
     };
 
 return (
 <>
 <div className="app_wrapper" onClick={closeIntro}>
-  
+<Links />
 <div className='app_cont'>
     
     {

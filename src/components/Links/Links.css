@@ -1,0 +1,25 @@
+
+.links_cont {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    display: flex;
+}
+
+.links_items {
+    padding: 10px;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.links_items:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-10%);
+}
+
+.links_items:active {
+    color: rgba(255, 255, 255, 1);
+    transform: translateY(11%);
+}

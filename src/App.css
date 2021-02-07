@@ -8,7 +8,6 @@
 
 .app_cont {
     border-radius: 5px;
-    border: 1px solid rgb(255, 255, 255, 0.5);
 
     /* and I might only need this height because 
     cont body child doesn't have designated sizing */

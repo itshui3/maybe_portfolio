@@ -1,6 +1,5 @@
 
-
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer } from 'react';
 
 import {
     initOffset,

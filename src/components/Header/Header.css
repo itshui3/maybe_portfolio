@@ -1,0 +1,28 @@
+.header_cont {
+    user-select: none;
+    width: 470px;
+}
+
+.header_text {
+    padding: 40px;
+}
+
+.text_pop {
+    text-decoration: underline;
+    cursor: pointer;
+
+    display: inline-block;
+}
+
+.text_pop:active {
+    transform: translateY(-20%);
+}
+
+
+.text_grey {
+    color: grey;
+}
+
+.text_pink {
+    color: pink;
+}

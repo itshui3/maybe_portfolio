@@ -69,4 +69,4 @@ export {
     initOffset,
     OFFSET,
     offsetReducer
-}
+};

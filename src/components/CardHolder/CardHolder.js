@@ -18,7 +18,7 @@ import {
 const activeBtnUI = (cur, idx) => {
 
     if (cur === idx) {return {
-        backgroundColor: "rgba(255, 255, 255, 1)",
+        backgroundColor: "rgba(0, 0, 0, 1)",
         transform: "scale(1.4)"
     }} else return {}
 
@@ -39,6 +39,11 @@ return (
     <div className='card_cont'>
         <div className='card_body'>
             <div className='card_imgBody'>
+
+            <GitHub />
+            <NewTab />
+
+            <InfoCircle />
 
             <ImgWrap 
             gif={display.gif}
@@ -75,7 +80,7 @@ return (
     </div>
 
 </>
-)
-};
+);
+}
 
 export default CardHolder;

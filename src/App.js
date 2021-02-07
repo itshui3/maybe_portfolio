@@ -1,19 +1,23 @@
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 import {
   Intro,
   CardHolder,
-} from './components'
+} from './components';
 
 function App() {
-    const [runIntro, setRunIntro] = useState(true)
+    const [runIntro, setRunIntro] = useState(true);
+
+    useEffect(() => {
+        console.log(runIntro);
+    }, [runIntro]);
 
     const closeIntro = () => {
-        console.log('hai gaiz owo?')
-        setRunIntro(false)
-    }
+        console.log('hai gaiz owo?');
+        setRunIntro(false);
+    };
 
 return (
 <>

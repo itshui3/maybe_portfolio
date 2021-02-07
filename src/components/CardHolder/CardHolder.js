@@ -18,7 +18,7 @@ import {
 const activeBtnUI = (cur, idx) => {
 
     if (cur === idx) {return {
-        backgroundColor: "rgba(0, 0, 0, 1)",
+        backgroundColor: "rgba(255, 255, 255, 1)",
         transform: "scale(1.4)"
     }} else return {}
 
@@ -30,7 +30,6 @@ function CardHolder() {
     const [display, dispatchDisplay] = useReducer(imgReducer, initImg);
 
     const handleHover = () => { dispatchDisplay({ type: IMG_ACTION.HOVER }) };
-
     const handleUnhover = () => { dispatchDisplay({ type: IMG_ACTION.UNHOVER }) };
 
 return (

@@ -53,14 +53,20 @@ function ImgWrap({
 
 return (
 <>
-
 <img 
 className='card_img' 
 src={gif ? assets[current].gif : assets[current].img} 
 
 onMouseEnter={handleHover} 
-onMouseLeave={handleUnhover} />
-    
+onMouseLeave={handleUnhover}>
+
+    <div className='img_assets_wrapper'>
+
+
+        
+    </div>
+
+</img>
 </>
 )
 }

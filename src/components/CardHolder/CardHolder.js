@@ -1,15 +1,19 @@
 
-import './CardHolder.css'
-import React, { useReducer } from 'react'
+import './CardHolder.css';
+import React, { useReducer } from 'react';
 
-import { Arrow } from '../../components'
-import ImgWrap from './ImgWrap/ImgWrap.js'
+import { Arrow } from '../../components';
+import ImgWrap from './ImgWrap/ImgWrap.js';
+// SVGs
+import NewTab from './NewTab/NewTab.js';
+import InfoCircle from './InfoCircle/InfoCircle.js';
+import GitHub from './GitHub/GitHub.js';
 
 import {
     initImg,
     IMG_ACTION,
     imgReducer,
-} from './assetBundle.js'
+} from './assetBundle.js';
 
 const activeBtnUI = (cur, idx) => {
 
@@ -18,20 +22,16 @@ const activeBtnUI = (cur, idx) => {
         transform: "scale(1.4)"
     }} else return {}
 
-}
+};
 // render as fn intaking current
 
 function CardHolder() {
 
-    const [display, dispatchDisplay] = useReducer(imgReducer, initImg)
+    const [display, dispatchDisplay] = useReducer(imgReducer, initImg);
 
-    const handleHover = () => {
-        dispatchDisplay({ type: IMG_ACTION.HOVER })
-    }
+    const handleHover = () => { dispatchDisplay({ type: IMG_ACTION.HOVER }) };
 
-    const handleUnhover = () => {
-        dispatchDisplay({ type: IMG_ACTION.UNHOVER })
-    }
+    const handleUnhover = () => { dispatchDisplay({ type: IMG_ACTION.UNHOVER }) };
 
 return (
 <>
@@ -76,6 +76,6 @@ return (
 
 </>
 )
-}
+};
 
-export default CardHolder
+export default CardHolder;

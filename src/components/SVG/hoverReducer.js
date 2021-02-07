@@ -1,10 +1,10 @@
 
-import produce from 'immer'
+import produce from 'immer';
 
 const hoverInit = {
     left: false,
     right: false
-}
+};
 
 const ACTION = {
 
@@ -14,7 +14,7 @@ const ACTION = {
     HOVER_RIGHT: 'hover_right_lajwerl;',
     UNHOVER_RIGHT: 'unhover_right_lajewuh'
 
-}
+};
 
 const hoverReducer = (state, {type, payload}) => {
 
@@ -43,11 +43,10 @@ const hoverReducer = (state, {type, payload}) => {
         default:
             return state
     }
-}
+};
 
 export {
     hoverInit,
     ACTION,
     hoverReducer,
-    
-}
+};

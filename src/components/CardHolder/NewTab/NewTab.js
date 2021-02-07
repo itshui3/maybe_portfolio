@@ -35,7 +35,7 @@ function NewTab() {
 return (
 <>
 
-    <svg className='svgs svg_newTab'
+    <svg className='svg_newTab'
     onMouseOver={() => dispatchOffset({ type: HOVER })}
     onMouseLeave={() => dispatchOffset({ type: UNHOVER })}>
 

@@ -40,8 +40,10 @@ return (
         <div className='card_body'>
             <div className='card_imgBody'>
 
-            <GitHub />
-            <NewTab />
+            <div className='github_newtab svgs'>
+                <GitHub />
+                <NewTab />
+            </div>
 
             <InfoCircle />
 

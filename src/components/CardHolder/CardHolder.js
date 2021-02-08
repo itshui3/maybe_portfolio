@@ -10,6 +10,7 @@ import InfoCircle from './InfoCircle/InfoCircle.js';
 import GitHub from './GitHub/GitHub.js';
 
 import {
+    projectTitles,
     initImg,
     IMG_ACTION,
     imgReducer,
@@ -36,15 +37,19 @@ return (
 <>
 
     <div className='card_cont'>
-        <div className='card_body'>
-            <div className='card_imgBody'>
+
+        <div className='infoPanel_cont'>
+            <h2 className='infoPanel_title'>{projectTitles[display.current]}</h2>
 
             <div className='github_newtab svgs'>
                 <GitHub idx={display.current} />
                 <NewTab idx={display.current} />
             </div>
+        </div>
 
-            <InfoCircle />
+        <div className='card_body'>
+
+            <div className='card_imgBody'>
 
             <ImgWrap 
             gif={display.gif}
@@ -56,6 +61,11 @@ return (
             </div>
         </div>
         <div className='card_footer'>
+
+            <div className='info_cont'>
+                <InfoCircle />
+            </div>
+            
             <div className='buttons_cont'>
             {
             [0, 1, 2, 3, 4].map((item, idx) => (

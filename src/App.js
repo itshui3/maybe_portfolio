@@ -12,10 +12,6 @@ import {
 function App() {
     const [runIntro, setRunIntro] = useState(true);
 
-    useEffect(() => {
-        console.log(runIntro);
-    }, [runIntro]);
-
     const closeIntro = () => {
         setRunIntro(false);
     };

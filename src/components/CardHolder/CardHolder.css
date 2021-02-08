@@ -10,7 +10,6 @@
 }
 
 .card_header {
-    /* border: 1px solid white; */
 
     height: 50px;
     width: 100%;
@@ -92,12 +91,28 @@
     position: relative;
 }
 
-.svgs {
-    position: absolute;
-    z-index: 5;
+.infoPanel_cont {
+    width: 100%;
+    margin: 5%;
 
-    background-color: rgb(192,192,192);
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoPanel_title {
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+.infoPanel_title:active {
+    transform: translateX(5%);
+}
+
+.svgs {
+    /* background-color: rgb(192,192,192); */
+    /* border-radius: 5px; */
     border: 1px solid white;
 
     padding: 5px;
@@ -106,13 +121,14 @@
     display: flex;
     justify-content: space-between;
 }
-.svgs:hover {
-    background-color: rgb(192,192,192);
-}
+/* .svgs:hover {
+    background-color: rgb(255, 255, 255);
+} */
 
 .svg_gh {
     width: 30px;
     height: 30px;
+    background-color: white;
 }
 
 .svg_newTab {
@@ -125,10 +141,15 @@
     right: 5%;
 }
 
+.info_cont {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .svg_info {
     width: 30px;
     height: 30px;
 
-    bottom: 5%;
-    right: 5%;
+    margin-top: 10px;
 }

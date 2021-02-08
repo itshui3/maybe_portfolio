@@ -52,9 +52,7 @@ function ImgWrap({
     handleHover,
     handleUnhover
 }) {
-    // gif: boolean: do we display gif or png
-    // current: Number: which projImg are we on
-    // gif ? assets[current].gif : assets[current].img
+/* s2g - 425 / 480 - 850 / 960 */
 
 return (
 <>

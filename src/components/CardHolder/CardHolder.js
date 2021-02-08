@@ -11,6 +11,7 @@ import GitHub from './GitHub/GitHub.js';
 
 import {
     projectTitles,
+    projectDesc,
     initImg,
     IMG_ACTION,
     imgReducer,
@@ -63,7 +64,18 @@ return (
         <div className='card_footer'>
 
             <div className='info_cont'>
-                <InfoCircle />
+                {
+                display.desc
+                ?
+                (<div className='desc_popup'>
+                {projectDesc[display.current]} <div className='desc_point' />
+                </div>)
+                :
+                null
+                }
+                <InfoCircle
+                clickDesc={() => dispatchDisplay({ type: IMG_ACTION.DESC })}
+                />
             </div>
             
             <div className='buttons_cont'>

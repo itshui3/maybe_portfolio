@@ -23,7 +23,7 @@ const COLOR = {
 
 };
 
-function InfoCircle() {
+function InfoCircle({ clickDesc }) {
 
     const [emphasis, setEmphasis] = useState('NATIVE');
 
@@ -38,6 +38,7 @@ return (
     
     onMouseOver={hover} onMouseLeave={unHover}
     onMouseDown={click} onMouseUp={unClick}
+    onClick={clickDesc}
     >
 
         <circle fill={COLOR.bigCirc[emphasis]} stroke="black"

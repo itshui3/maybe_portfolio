@@ -1,6 +1,14 @@
 
 import produce from 'immer';
 
+const projectTitles = [
+    "Game Of Life",
+    "Game Of Object",
+    "Mighty List",
+    "Calculator",
+    "Snek"
+];
+
 const lastProjIndex = 4;
 
 const initImg = {
@@ -61,7 +69,7 @@ const imgReducer = (state, { type, payload }) => {
 };
 
 export {
-
+    projectTitles,
     initImg,
     IMG_ACTION,
     imgReducer,

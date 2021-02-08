@@ -1,7 +1,6 @@
 .footer_cont {
-    position: fixed;
-    bottom: 0;
     user-select: none;
+    margin-top: 10em;
 }
 
 .links_cont {

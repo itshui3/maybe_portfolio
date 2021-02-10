@@ -7,6 +7,7 @@ const ghAssets = [
     "https://github.com/itshui3/the_mighty_list_of_stuffs",
     "https://github.com/itshui3/scientific_calculator",
     "https://github.com/itshui3/snek",
+    "https://github.com/itshui3/tetris",
 ]
 
 function GitHub({ idx }) {

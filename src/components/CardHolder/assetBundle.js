@@ -6,7 +6,8 @@ const projectTitles = [
     "Game Of Object",
     "Mighty List",
     "Calculator",
-    "Snek"
+    "Snek",
+    "Tetris"
 ];
 
 const projectDesc = [
@@ -20,9 +21,11 @@ const projectDesc = [
     "Calculator can perform functional computations like log and exponents in addition to the usual calculation sequence. I based the sequential calculation case handling close to how my native windows calculation behaves. (ie. pressing an operator sometimes performs the next calculation, sometimes does nothing, etc...)",
     // Snek
     "Snek, or Snake, is a classic game in which the user controls a snake to move in cardinal directions on a 2D grid. The objective is to consume food and grow your snake without bumping into walls or other parts of the snake's body.",
+    // Tetris
+    "Tetris, video game created by Russian designer Alexey Pajitnov in 1985 that allows players to rotate falling blocks strategically to clear levels. The goal of the game is to prevent the blocks from stacking up to the top of the screen for as long as possible."
 ]
 
-const lastProjIndex = 4;
+const lastProjIndex = projectTitles.length-1;
 
 const initImg = {
     current: 0,

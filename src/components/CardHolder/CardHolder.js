@@ -48,7 +48,7 @@ return (
             </div>
         </div>
 
-        <div className='card_body'>
+        {/* <div className='card_body'> */}
 
             <div className='card_imgBody'>
 
@@ -60,7 +60,7 @@ return (
             />
             
             </div>
-        </div>
+        {/* </div> */}
         <div className='card_footer'>
 
             <div className='info_cont'>

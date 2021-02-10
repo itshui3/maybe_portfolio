@@ -80,7 +80,7 @@ return (
             
             <div className='buttons_cont'>
             {
-            [0, 1, 2, 3, 4].map((item, idx) => (
+            [0, 1, 2, 3, 4, 5].map((item, idx) => (
                 <div className='buttons_btn' key={idx}
                 style={activeBtnUI(display.current, idx)}
                 // if current === idx, style should depict clear transform

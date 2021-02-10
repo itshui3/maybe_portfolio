@@ -15,7 +15,8 @@ const ntAssets = [
     "https://game-of-object-object.firebaseapp.com/",
     "https://the-mighty-list-of-stuffs.itshui3.vercel.app/",
     "https://scientific-calculator-three.vercel.app/",
-    "https://snek-game.vercel.app/snek"
+    "https://snek-game.vercel.app/snek",
+    "https://xuhui-tetris.web.app/",
 ]
 
 function NewTab({ idx }) {
